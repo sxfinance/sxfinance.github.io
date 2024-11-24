@@ -16,37 +16,44 @@
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+        font-family: Georgia, sans-serif;
+        font-size: 1.5em;
+        margin-bottom: 40px;
+    }
+    .research-text {
+        font-family: 'Philosopher', sans-serif;
+        font-size: 1.1em;
+    }
+    .navbar-nav li a.home-link {
+        color: #e01709;
+    }
+  </style>
 </head>
-<body style="font-family: Georgia, sans-serif; font-size: 1.5em; margin-bottom: 40px">
-
-
+<body>
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse">
-      <div class="container">
-          <ul class="nav navbar-nav">
-              <li><a style="color:#e01709" href="/">Home</a></li>
-              <li><a href="Research.html">Research</a></li>
-              <li><a href="Discussion.html">Discussion</a></li> 
-              <li><a href="Teaching.html">Teaching</a></li> 
-          </ul>
-      </div>
-  </nav>
+    <nav class="navbar navbar-inverse" aria-label="Main navigation">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li><a class="home-link" href="/">Home</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Discussion.html">Discussion</a></li> 
+                <li><a href="Teaching.html">Teaching</a></li> 
+            </ul>
+        </div>
+    </nav>
   
   <!-- Page Content -->
     <div class="container">
-
         <div class="row">
-
             <!-- Entries Column -->
-            <div class="col-md-8">    
-           
+            <div class="col-md-8 col-sm-12">    
                 <!-- Main Image -->
-                <div class="col-md-5">
-                    <img class="img-responsive" src="img/Shuo-headshot.jpg" alt=""><br>
+                <div class="col-md-5 col-sm-12">
+                    <img class="img-responsive" src="img/Shuo-headshot.jpg" alt="Headshot of Shuo Xia"><br>
                 </div>
-
-                
-                <div class="col-md-7" style="text-align:justify; font-family: Philosopher, sans-serif; font-size: 1.1em;">
+                <div class="col-md-7 col-sm-12 research-text">
                     <p>Hi, I'm Shuo! I'm a Assistant Professor of Finance at the <a href="https://www.iwh-halle.de/en/about-the-iwh/team/detail/shuo-xia"> Halle Institute for Economic Research</a> and at <a href="https://www.wifa.uni-leipzig.de/en/institut-for-commerce-and-banking"> Leipzig University</a>
                     </p>
                     <p><b><u>Research Interests:</u></b> Corporate Finance, Corporate Governance, and Labor Economics.</p>
@@ -56,8 +63,8 @@
             <!-- Contact Info on the Sidebar -->
             <div class="col-md-4">
                 <div style="font-family: 'Oswald', sans-serif; font-size: 32px;"><b>Shuo Xia</b></div><br>
-                <p><b>shuo.xia[at]iwh-halle.de</b></p>
-                <p>Department of Financial Markets<br>
+                <p><i class="fa fa-envelope"></i> shuo.xia[at]iwh-halle.de</p>
+                <p><i class="fa fa-map-marker"></i> Department of Financial Markets<br>
                     Halle Institute for Economic Research <br>
                     Kleine Maerkerstrasse 8 <br>
                     06108 Halle (Saale) <br>
