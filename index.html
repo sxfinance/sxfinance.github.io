@@ -7,27 +7,43 @@
 
 <html lang="en">
 <head>
-  <title>Shuo Xia</title>
+  <title>Shuo Xia 夏烁</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Philosopher|Oswald" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     body {
-        font-family: Georgia, sans-serif;
+        font-family: Georgia, serif;
         font-size: 1.5em;
         margin-bottom: 40px;
     }
-    .research-text {
-        font-family: 'Philosopher', sans-serif;
-        font-size: 1.1em;
+    ol {
+        margin-bottom: 15px;
     }
-    .navbar-nav li a.home-link {
-        color: #e01709;
+    ol li {
+        margin-bottom: 10px;
+    }
+    ol ol {
+        margin-top: 5px;
+        padding-left: 25px;
+        list-style-type: circle;
+        font-size: 0.9em;
+        color: black;
+    }
+    ol ol li {
+        margin-bottom: 7px;
+        font-style: italic;
+    }
+    .name-header {
+        font-family: 'Oswald', sans-serif;
+        font-size: 32px;
+    }
+    .research-title {
+        font-family: 'Garamond', serif;
     }
   </style>
 </head>
@@ -36,7 +52,7 @@
     <nav class="navbar navbar-inverse" aria-label="Main navigation">
         <div class="container">
             <ul class="nav navbar-nav">
-                <li><a class="home-link" href="/">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="Research.html">Research</a></li>
                 <li><a href="Discussion.html">Discussion</a></li> 
                 <li><a href="Teaching.html">Teaching</a></li> 
@@ -44,7 +60,7 @@
         </div>
     </nav>
   
-  <!-- Page Content -->
+    <!-- Page Content -->
     <div class="container">
         <div class="row">
             <!-- Entries Column -->
@@ -53,9 +69,8 @@
                 <div class="col-md-5 col-sm-12">
                     <img class="img-responsive" src="img/Shuo-headshot.jpg" alt="Headshot of Shuo Xia"><br>
                 </div>
-                <div class="col-md-7 col-sm-12 research-text">
-                    <p>Hi, I'm Shuo! I'm an Assistant Professor of Finance at the <a href="https://www.iwh-halle.de/en/about-the-iwh/team/detail/shuo-xia" target="_blank" rel="noopener noreferrer"> Halle Institute for Economic Research</a> and at <a href="https://www.wifa.uni-leipzig.de/en/institut-for-commerce-and-banking" target="_blank" rel="noopener noreferrer"> Leipzig University</a>
-                    </p>
+                <div class="col-md-7 col-sm-12">
+                    <p>Hi, I'm Shuo! I'm an Assistant Professor of Finance at the <a href="https://www.iwh-halle.de/en/about-the-iwh/team/detail/shuo-xia" target="_blank" rel="noopener noreferrer"> Halle Institute for Economic Research</a> and at <a href="https://www.wifa.uni-leipzig.de/en/institut-for-commerce-and-banking" target="_blank" rel="noopener noreferrer"> Leipzig University</a>.</p>
 
                     <div style="margin-top: 30px;"></div>
 
@@ -65,10 +80,10 @@
 
             <!-- Contact Info on the Sidebar -->
             <div class="col-md-4">
-                <div style="font-family: 'Oswald', sans-serif; font-size: 32px;"><b>Shuo Xia</b></div><br>
+                <div class="name-header"><b>Shuo Xia 夏烁</b></div><br>
                 <p><i class="fa fa-envelope"></i> 
                     <a href="mailto:shuo.xia@iwh-halle.de" rel="noopener noreferrer">
-                        <u>shuo.xia[at]iwh-halle.de</u>
+                        <u>shuo.xia@iwh-halle.de</u>
                     </a>
                 </p>
                 <p>Department of Financial Markets <br>
@@ -79,29 +94,17 @@
                 </p>
             </div>
             
-            
-            <!-- Links on the Sidebar -->
-            <!-- <div class="col-md-4" style="margin-top:2%">
-              <dd><a href="#">Google Scholar</a></dd> 
-              <dd><a href="#">Twitter</a></dd>
-              <dd><a href="#">LinkedIn</a></dd>
-            </div> -->
-            
-            
-            <!-- New Updates -->
+            <!-- Highlights Section -->
             <div class="col-md-8">    
-                <h2 style="font-family: Philosopher, sans-serif;">Highlights</h2>
-            	<ul>
-			            <li><b>[Dec 15, 2024]</b> I will present the paper <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4486434" target="_blank" rel="noopener noreferrer">Poison Bonds</a> at <a href="https://sfs.org/sfs-cavalcade-asia-pacific-2024/" target="_blank" rel="noopener noreferrer">SFS Cavalcade Asia-Pacific 2024</a> </li>
-                        <li><b>[Nov 21, 2024]</b> My co-author Stefano Colonnello presented our paper <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4189561" target="_blank" rel="noopener noreferrer">Trading Away Incentives</a> at <a href="https://programme.strategicownership.com" target="_blank" rel="noopener noreferrer">Owners as Strategists Conference 2024</a></li>
-                        <li><b>[Nov 16, 2024]</b> My co-author Rex Wang Renjie presented our paper <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4339525" target="_blank" rel="noopener noreferrer">ESG Investing Beyond Risk and Return</a> at <a href="https://www.ou.edu/price/events/finance/climate-and-energy-research" target="_blank" rel="noopener noreferrer">OU-RFS Climate and Energy Finance Research Conference 2024</a></li>
-                        <li><b>[Oct 21-22, 2024]</b> Our institute successfully held the <a href="https://www.iwh-halle.de/ueber-das-iwh/veranstaltungen/detail/10th-iwh-fin-fire-workshop-on-challenges-to-financial-stability" target="_blank" rel="noopener noreferrer">10th IWH-FIN-FIRE Workshop on "Challenges to Financial Stability".</a></li>
-            	</ul>
+                <h2 class="research-title">Highlights</h2>
+                <ul>
+                    <li><b>[Dec 15, 2024]</b> I will present the paper <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4486434" target="_blank" rel="noopener noreferrer">Poison Bonds</a> at <a href="https://sfs.org/sfs-cavalcade-asia-pacific-2024/" target="_blank" rel="noopener noreferrer">SFS Cavalcade Asia-Pacific 2024</a>.</li>
+                    <li><b>[Nov 21, 2024]</b> My co-author Stefano Colonnello presented our paper <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4189561" target="_blank" rel="noopener noreferrer">Trading Away Incentives</a> at <a href="https://programme.strategicownership.com" target="_blank" rel="noopener noreferrer">Owners as Strategists Conference 2024</a>.</li>
+                    <li><b>[Nov 16, 2024]</b> My co-author Rex Wang Renjie presented our paper <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4339525" target="_blank" rel="noopener noreferrer">ESG Investing Beyond Risk and Return</a> at <a href="https://www.ou.edu/price/events/finance/climate-and-energy-research" target="_blank" rel="noopener noreferrer">OU-RFS Climate and Energy Finance Research Conference 2024</a>.</li>
+                    <li><b>[Oct 21-22, 2024]</b> Our institute successfully held the <a href="https://www.iwh-halle.de/ueber-das-iwh/veranstaltungen/detail/10th-iwh-fin-fire-workshop-on-challenges-to-financial-stability" target="_blank" rel="noopener noreferrer">10th IWH-FIN-FIRE Workshop on "Challenges to Financial Stability".</a></li>
+                </ul>
             </div>
-            
         </div>
     </div>
-    
 </body>
-
 </html>
