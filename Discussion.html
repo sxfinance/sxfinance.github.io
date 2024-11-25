@@ -43,12 +43,22 @@
     }
     .name-header {
         font-family: 'Oswald', sans-serif;
-        font-size: 30px;
+        font-size: 32px;
     }
     .contact-info {
         font-family: Georgia, serif;
-        font-size: 1.0em;
-        line-height: 1.5;
+        font-size: 1.2em;
+        line-height: 1.6;
+    }
+    .main-content {
+        float: left;
+        width: 70%;
+    }
+    .sidebar {
+        float: right;
+        width: 30%;
+        position: sticky;
+        top: 20px; /* Keeps it visible when scrolling */
     }
   </style>
 </head>
@@ -128,22 +138,23 @@
             </ul>
         </div>
 
-            <!-- Contact Info on the Sidebar -->
-            <div class="col-md-4">
-                <div class="name-header"><b>Shuo Xia 夏烁</b></div><br>
-                <p><i class="fa fa-envelope"></i> 
-                    <a href="mailto:shuo.xia@iwh-halle.de" rel="noopener noreferrer">
-                        <u>shuo.xia[at]iwh-halle.de</u>
-                    </a>
-                </p>
-                <p class="contact-info">
-                    Department of Financial Markets <br>
-                    Halle Institute for Economic Research <br>
-                    Kleine Maerkerstrasse 8 <br>
-                    06108 Halle (Saale) <br>
-                    Germany <br> 
-                </p>
-            </div>
+      <!-- Contact Info Sidebar -->
+      <div class="sidebar">
+        <div class="name-header"><b>Shuo Xia 夏烁</b></div><br>
+        <p class="contact-info">
+          <i class="fa fa-envelope"></i> 
+          <a href="mailto:shuo.xia@iwh-halle.de" rel="noopener noreferrer">
+            <u>shuo.xia@iwh-halle.de</u>
+          </a>
+        </p>
+        <p class="contact-info">
+          Department of Financial Markets<br>
+          Halle Institute for Economic Research<br>
+          Kleine Maerkerstrasse 8<br>
+          06108 Halle (Saale)<br>
+          Germany<br>
+        </p>
+      </div>
     </div>
  </div>
 
