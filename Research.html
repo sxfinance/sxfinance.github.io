@@ -8,172 +8,212 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Philosopher|Oswald" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-    body {
-        font-family: Georgia, serif;
-        font-size: 1.5em;
-        margin-bottom: 40px;
+ body {
+      font-family: 'Garamond', serif;
+      font-size: 12px;
+      margin: 0;
+      display: flex;
+      min-height: 100vh;
     }
-    nav {
-        margin-bottom: 20px;
-        height: 60px; /* Fixed height for the navigation bar */
-        line-height: 60px; /* Vertically aligns text inside the navbar */
+
+     /* Sidebar styling */
+     .sidebar {
+      width: 25%;
+      min-width: 250px;
+      background-color: #f8f9fa;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      overflow-y: auto;
     }
-    .navbar-nav > li > a {
-        line-height: 60px; /* Ensures vertical alignment of navigation links */
+
+    .sidebar img {
+      max-width: 100%;
+      border-radius: 5px;
+      margin-bottom: 20px;
     }
-    ol {
-        margin-bottom: 15px;
+
+    .sidebar .name-header {
+      font-family: 'Oswald', sans-serif;
+      font-size: 28px;
+      margin-bottom: 20px;
     }
-    ol li {
-        margin-bottom: 10px; /* Adds a small gap between main list items */
+
+    .sidebar .contact-info {
+      font-family: 'Garamond', serif;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 20px;
     }
-    ol ol {
-        margin-top: 5px;
-        padding-left: 25px;  /* Adds more indentation for nested points */
-        list-style-type: circle; /* Uses circle "o" for nested points */
-        font-size: 0.9em; /* Smaller font size for nested points */
-        color: black; /* Ensures nested points are black */
+
+    .sidebar a {
+      text-decoration: none;
+      color: #007bff;
     }
-    ol ol li {
-        margin-bottom: 7px; /* Adds a small gap between nested points */
-        font-style: italic; /* Makes nested points slightly different */
+
+    /* Main content styling */
+    .main-content {
+      margin-left: 25%;
+      width: 75%;
+      padding: 20px;
     }
-    .name-header {
-        font-family: 'Oswald', sans-serif;
-        font-size: 30px;
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 15px;
     }
-    .contact-info {
-        font-family: Georgia, serif;
-        font-size: 1.2em;
-        line-height: 1.6;
+
+    nav ul li a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    h1, h2 {
+      font-family: 'Garamond', serif;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
     }
   </style>
 </head>
 
 <body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <img src="img/Shuo-headshot.jpg" alt="Headshot of Shuo Xia">
+    <div class="name-header"><b>Shuo Xia 夏烁</b></div>
+    <p class="contact-info">
+      <i class="fa fa-envelope"></i> 
+      <a href="mailto:shuo.xia@iwh-halle.de" rel="noopener noreferrer">shuo.xia@iwh-halle.de</a>
+    </p>
+    <p class="contact-info">
+      Department of Financial Markets<br>
+      Halle Institute for Economic Research<br>
+      Kleine Maerkerstrasse 8<br>
+      06108 Halle (Saale)<br>
+      Germany<br>
+    </p>
+    <p class="contact-info">
+      <a href="src/Shuo_Xia_cv.pdf" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a> <i>(Updated Nov 2024)</i><br>
+      <a href="https://scholar.google.com/citations?user=_le-O14AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a><br>
+      <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2556755" target="_blank" rel="noopener noreferrer">SSRN</a>
+    </p>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse">
-      <div class="container">
-          <ul class="nav navbar-nav">
-              <li><a href="/">Home</a></li>
-              <li><a href="Research.html">Research</a></li>
-              <li><a href="Discussion.html">Discussion</a></li> 
-              <li><a href="Teaching.html">Teaching</a></li> 
-          </ul>
-      </div>
-  </nav>
-  
-  <!-- Page Content -->
-  <div class="container">
-    <div class="row">
-        <!-- Research -->
-        <div class="col-md-8">
-            <h1 id="Research">Research</h1>
-            <!-- Working papers -->
-            <h2 style="font-family: 'Garamond', serif;">Working papers</h2>
-            <ol>
-                <li class="paper" words="">
-                    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4794832" target="_blank" rel="noopener noreferrer"><u>When Does Linking Pay to Default Reduce Bank Risk?</u></a> 
-                    with <a href="https://sites.google.com/site/stefanocolonnello/" target="_blank" rel="noopener noreferrer">Stefano Colonnello</a> 
-                    and <a href="https://sites.google.com/site/curatolagiuliano/" target="_blank" rel="noopener noreferrer">Giuliano Curatola</a> 
-                </li>
-                <li class="paper" words="">
-                    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4486434" target="_blank" rel="noopener noreferrer"><u>Poison Bonds</u></a> 
-                    with <a href="https://rexwangrenjie.weebly.com" target="_blank" rel="noopener noreferrer">Rex Wang Renjie</a>
-                    <ol>
-                        <li>On the program of SFS Cavalcade Asia-Pacific(Scheduled), WFA, NYU/Penn Conference on Law & Finance, Finance Down Under, SGF, FMA Consortium on Asset Management,  FMA Asia/Pacific,  Venice Finance Workshop
-                        </li>
-                        <li><b>Coverage:</b>  <a href="https://www.institutionalinvestor.com/article/2c1mlv5y6cpyfeefs4s8w/portfolio/poison-pills-have-been-replaced-and-the-results-arent-pretty" target="_blank" rel="noopener noreferrer"> <i><u>Institutional Investors</u></i></a>,  
-                            <a href="https://corpgov.law.harvard.edu/2024/01/18/poison-bonds/" target="_blank" rel="noopener noreferrer"> <i><u>Harvard Law School Forum on Corporate Governance</u></i></a>,
-                            <a href="https://www.ft.com/content/8850b783-4696-4cb1-aab8-125417910689" target="_blank" rel="noopener noreferrer"> <i><u>FT Alphaville</u></i></a>
-                            <a href="https://www.ft.com/content/cf8966ac-a3b8-4282-8046-a74b6bb03376" target="_blank" rel="noopener noreferrer"> <i><u>(2x)</u></i></a> 
-                        </li>
-                    </ol>
-                </li>    
-                <li class="paper" words="">
-                    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4189561" target="_blank" rel="noopener noreferrer"><u>Trading Away Incentives</u></a> 
-                    with <a href="https://sites.google.com/site/stefanocolonnello/" target="_blank" rel="noopener noreferrer">Stefano Colonnello</a> 
-                    and <a href="https://sites.google.com/site/curatolagiuliano/" target="_blank" rel="noopener noreferrer">Giuliano Curatola</a>
-                    <ol>
-                        <li>On the program of Paris December Finance Meeting (Scheduled), Owners as Strategists 2024, CICF
-                        </li>
-                    </ol>
-                </li>     
-                <li class="paper" words="">
-                    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4339525" target="_blank" rel="noopener noreferrer"><u>ESG Investing Beyond Risk and Return</u></a> 
-                    with <a href="https://rexwangrenjie.weebly.com" target="_blank" rel="noopener noreferrer">Rex Wang Renjie</a>
-                    <ol>
-                        <li>OU-RFS Climate and Energy Conference, DGF, CICF, SoFiE, FMA Europe, FMA Asia/Pacific
-                        </li>
-                        <li><b>Invited for the RFS Dual Submission</b>
-                        </li>
-                    </ol>
-                </li>
-                <li class="paper" words="">
-                    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3193048" target="_blank" rel="noopener noreferrer"><u>Lame-Duck CEOs</u></a> 
-                    with <a href="https://personal.eur.nl/gryglewicz/" target="_blank" rel="noopener noreferrer">Sebastian Gryglewicz</a> 
-                    and <a href="https://personal.eur.nl/gabarro/" target="_blank" rel="noopener noreferrer">Marc Gabarro</a> 
-                    <ol>
-                        <li>On the program of Executive Compensation Conference, EEA-ESEM, MFA
-                        </li>
-                        <li><b>Coverage:</b>  <a href="https://clsbluesky.law.columbia.edu/2018/10/17/lame-duck-ceos/" target="_blank" rel="noopener noreferrer"> <i><u>Columbia Law School's Blue Sky Blog​</u></i></a>  
-                        </li>
-                    </ol>
-                </li>
-                <li class="paper" words="">
-                    Selection Versus Incentives in Incentive Pay: Evidence from a Matching Model (Under major revision)
-                    <ol>
-                        <li>On the program of AFBC, DGF, Paris December Meeting
-                        </li>
-                        <li><b>Bureau Van Dijk Prize, 30th AFBC</b>
-                        </li>
-                    </ol> 
-                </li>                                                                                            
-            </ol>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="Research.html">Research</a></li>
+        <li><a href="Discussion.html">Discussion</a></li>
+        <li><a href="Teaching.html">Teaching</a></li>
+      </ul>
+    </nav>
 
-            <!-- Published and forthcoming papers -->
-            <h2 style="font-family: 'Garamond', serif;">Published and forthcoming papers</h2>
-            <ol>
-                <li class="paper" words="">
-                    <a href="https://www.cambridge.org/core/journals/journal-of-financial-and-quantitative-analysis/article/corporate-investment-benefits-of-mutual-fund-dual-holdings/2D431805476741E0E1F777FD85424510" target="_blank" rel="noopener noreferrer"><u>The Corporate Investment Benefits of Mutual Fund Dual Holdings</u></a> 
-                    with <a href="https://rexwangrenjie.weebly.com" target="_blank" rel="noopener noreferrer">Rex Wang Renjie</a>
-                    and <a href="https://sites.google.com/site/patrickverwijmeren/" target="_blank" rel="noopener noreferrer">Patrick Verwijmeren</a>, <i><b>Journal of Financial and Quantitative Analysis</b>, forthcoming</i>
-                    <ol>
-                        <li><b>Coverage:</b>  <a href="https://corpgov.law.harvard.edu/2024/02/02/the-corporate-investment-benefits-of-mutual-fund-dual-holdings/" target="_blank" rel="noopener noreferrer"> <i><u>Harvard Law School Forum on Corporate Governance​</u></i></a>  
-                        </li>
-                    </ol>
-                </li>    
-                <li class="paper" words="">
-                    <a href="https://onlinelibrary.wiley.com/doi/10.1111/jofi.13337" target="_blank" rel="noopener noreferrer"><u>Nonstandard Errors</u></a>
-                    with <a href="https://albertjmenkveld.com" target="_blank" rel="noopener noreferrer">Albert Menkveld</a> et al., <i><b>Journal of Finance</b>, 79, 2339-2390 (2024)</i> 
-                </li>                                                                                            
-            </ol>
-            </div>
-
-            <!-- Contact Info on the Sidebar -->
-            <div class="col-md-4">
-                <div class="name-header"><b>Shuo Xia 夏烁</b></div><br>
-                <p class="contact-info">
-                  <i class="fa fa-envelope"></i> 
-                  <a href="mailto:shuo.xia@iwh-halle.de" rel="noopener noreferrer">
-                    <u>shuo.xia@iwh-halle.de</u>
-                  </a>
-                </p>
-                <p class="contact-info">
-                  Department of Financial Markets<br>
-                  Halle Institute for Economic Research<br>
-                  Kleine Maerkerstrasse 8<br>
-                  06108 Halle (Saale)<br>
-                  Germany<br>
-                </p>
-              </div>
+    <!-- Main Section -->
+    <div>
+      <h1>Research</h1>
+      <div>
+        <h2>Working papers</h2>
+        <ol>
+            <li class="paper" words="">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4794832" target="_blank" rel="noopener noreferrer"><u>When Does Linking Pay to Default Reduce Bank Risk?</u></a> 
+                with <a href="https://sites.google.com/site/stefanocolonnello/" target="_blank" rel="noopener noreferrer">Stefano Colonnello</a> 
+                and <a href="https://sites.google.com/site/curatolagiuliano/" target="_blank" rel="noopener noreferrer">Giuliano Curatola</a> 
+            </li>
+            <li class="paper" words="">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4486434" target="_blank" rel="noopener noreferrer"><u>Poison Bonds</u></a> 
+                with <a href="https://rexwangrenjie.weebly.com" target="_blank" rel="noopener noreferrer">Rex Wang Renjie</a>
+                <ol>
+                    <li>On the program of SFS Cavalcade Asia-Pacific(Scheduled), WFA, NYU/Penn Conference on Law & Finance, Finance Down Under, SGF, FMA Consortium on Asset Management,  FMA Asia/Pacific,  Venice Finance Workshop
+                    </li>
+                    <li><b>Coverage:</b>  <a href="https://www.institutionalinvestor.com/article/2c1mlv5y6cpyfeefs4s8w/portfolio/poison-pills-have-been-replaced-and-the-results-arent-pretty" target="_blank" rel="noopener noreferrer"> <i><u>Institutional Investors</u></i></a>,  
+                        <a href="https://corpgov.law.harvard.edu/2024/01/18/poison-bonds/" target="_blank" rel="noopener noreferrer"> <i><u>Harvard Law School Forum on Corporate Governance</u></i></a>,
+                        <a href="https://www.ft.com/content/8850b783-4696-4cb1-aab8-125417910689" target="_blank" rel="noopener noreferrer"> <i><u>FT Alphaville</u></i></a>
+                        <a href="https://www.ft.com/content/cf8966ac-a3b8-4282-8046-a74b6bb03376" target="_blank" rel="noopener noreferrer"> <i><u>(2x)</u></i></a> 
+                    </li>
+                </ol>
+            </li>    
+            <li class="paper" words="">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4189561" target="_blank" rel="noopener noreferrer"><u>Trading Away Incentives</u></a> 
+                with <a href="https://sites.google.com/site/stefanocolonnello/" target="_blank" rel="noopener noreferrer">Stefano Colonnello</a> 
+                and <a href="https://sites.google.com/site/curatolagiuliano/" target="_blank" rel="noopener noreferrer">Giuliano Curatola</a>
+                <ol>
+                    <li>On the program of Paris December Finance Meeting (Scheduled), Owners as Strategists 2024, CICF
+                    </li>
+                </ol>
+            </li>     
+            <li class="paper" words="">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4339525" target="_blank" rel="noopener noreferrer"><u>ESG Investing Beyond Risk and Return</u></a> 
+                with <a href="https://rexwangrenjie.weebly.com" target="_blank" rel="noopener noreferrer">Rex Wang Renjie</a>
+                <ol>
+                    <li>OU-RFS Climate and Energy Conference, DGF, CICF, SoFiE, FMA Europe, FMA Asia/Pacific
+                    </li>
+                    <li><b>Invited for the RFS Dual Submission</b>
+                    </li>
+                </ol>
+            </li>
+            <li class="paper" words="">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3193048" target="_blank" rel="noopener noreferrer"><u>Lame-Duck CEOs</u></a> 
+                with <a href="https://personal.eur.nl/gryglewicz/" target="_blank" rel="noopener noreferrer">Sebastian Gryglewicz</a> 
+                and <a href="https://personal.eur.nl/gabarro/" target="_blank" rel="noopener noreferrer">Marc Gabarro</a> 
+                <ol>
+                    <li>On the program of Executive Compensation Conference, EEA-ESEM, MFA
+                    </li>
+                    <li><b>Coverage:</b>  <a href="https://clsbluesky.law.columbia.edu/2018/10/17/lame-duck-ceos/" target="_blank" rel="noopener noreferrer"> <i><u>Columbia Law School's Blue Sky Blog​</u></i></a>  
+                    </li>
+                </ol>
+            </li>
+            <li class="paper" words="">
+                Selection Versus Incentives in Incentive Pay: Evidence from a Matching Model (Under major revision)
+                <ol>
+                    <li>On the program of AFBC, DGF, Paris December Meeting
+                    </li>
+                    <li><b>Bureau Van Dijk Prize, 30th AFBC</b>
+                    </li>
+                </ol> 
+            </li>                                                                                            
+        </ol>
+     </div>
+     <div>
+        <h2>Published and forthcoming papers</h2>
+        <ol>
+            <li class="paper" words="">
+                <a href="https://www.cambridge.org/core/journals/journal-of-financial-and-quantitative-analysis/article/corporate-investment-benefits-of-mutual-fund-dual-holdings/2D431805476741E0E1F777FD85424510" target="_blank" rel="noopener noreferrer"><u>The Corporate Investment Benefits of Mutual Fund Dual Holdings</u></a> 
+                with <a href="https://rexwangrenjie.weebly.com" target="_blank" rel="noopener noreferrer">Rex Wang Renjie</a>
+                and <a href="https://sites.google.com/site/patrickverwijmeren/" target="_blank" rel="noopener noreferrer">Patrick Verwijmeren</a>, <i><b>Journal of Financial and Quantitative Analysis</b>, forthcoming</i>
+                <ol>
+                    <li><b>Coverage:</b>  <a href="https://corpgov.law.harvard.edu/2024/02/02/the-corporate-investment-benefits-of-mutual-fund-dual-holdings/" target="_blank" rel="noopener noreferrer"> <i><u>Harvard Law School Forum on Corporate Governance​</u></i></a>  
+                    </li>
+                </ol>
+            </li>    
+            <li class="paper" words="">
+                <a href="https://onlinelibrary.wiley.com/doi/10.1111/jofi.13337" target="_blank" rel="noopener noreferrer"><u>Nonstandard Errors</u></a>
+                with <a href="https://albertjmenkveld.com" target="_blank" rel="noopener noreferrer">Albert Menkveld</a> et al., <i><b>Journal of Finance</b>, 79, 2339-2390 (2024)</i> 
+            </li>                                                                                            
+        </ol>
     </div>
- </div>
-
-    
+    </div>
+  </div>
 </body>
 
 </html>
