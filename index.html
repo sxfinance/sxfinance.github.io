@@ -59,16 +59,6 @@
         font-size: 1.2em;
         line-height: 1.6;
     }
-    .main-content {
-        float: left;
-        width: 70%;
-    }
-    .sidebar {
-        float: right;
-        width: 30%;
-        position: sticky;
-        top: 20px; /* Keeps it visible when scrolling */
-    }
   </style>
 </head>
 <body>
@@ -88,32 +78,40 @@
     <div class="container">
         <div class="row">
             <!-- Entries Column -->
-            <div class="col-md-8 col-sm-12">    
+            <div class="col-md-8 col-sm-12">
+                <!-- Highlighted: Added a wrapping row to organize the image and text -->
+                <div class="row">    
                 <!-- Main Image -->
                 <div class="col-md-5 col-sm-12">
                     <img class="img-responsive" src="img/Shuo-headshot.jpg" alt="Headshot of Shuo Xia"><br>
                 </div>
+                <!-- Introduction and Links -->
                 <div class="col-md-7 col-sm-12">
                     <p>Hi, I'm Shuo! I'm an Assistant Professor of Finance at the 
                         <a href="https://www.iwh-halle.de/en/about-the-iwh/team/detail/shuo-xia" target="_blank" rel="noopener noreferrer"> Halle Institute for Economic Research</a> 
                         and at <a href="https://www.wifa.uni-leipzig.de/en/institut-for-commerce-and-banking" target="_blank" rel="noopener noreferrer"> Leipzig University</a>. 
                         You can find my CV below. 
                     </p>
-                    <!-- <div style="margin-top: 30px;"></div> -->
-                    <p><b><u>Research Interests:</u></b> <br>
-                        <i>Corporate Finance</i><br>
-                        <i>Corporate Governance</i><br>
-                        <i>Applied Microeconomics</i><br>
-                    </p>                   
-                    <!-- <div style="margin-top: 30px;"></div> -->
-                    <p><a href="src/Shuo_Xia_cv.pdf" target="_blank" rel="noopener noreferrer"> <u><b>Curriculum Vitae</b></uu></a></p>
-                    <p><a href="https://scholar.google.com/citations?user=_le-O14AAAAJ&hl=en" target="_blank" rel="noopener noreferrer"> <u><b>Google Scholar</b></uu></a></p>
-                    <p><a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2556755" target="_blank" rel="noopener noreferrer"> <u><b>SSRN</b></uu></a></p>
-                    </div>                
-            </div> 
+
+                    <div style="margin-top: 10px;"></div>
+                    <!-- Highlighted: Reformatted Research Interests for clarity -->
+                    <p><b><u>Research Interests:</u></b></p>
+                    <ul>
+                    <li><i>Corporate Finance</i></li>
+                    <li><i>Corporate Governance</i></li>
+                    <li><i>Applied Microeconomics</i></li>
+                    </ul>       
+                    <!-- Highlighted: Fixed improper HTML tags for the links -->
+                    <div style="margin-top: 10px;"></div>
+                    <p><a href="src/Shuo_Xia_cv.pdf" target="_blank" rel="noopener noreferrer"> <u><b>Curriculum Vitae</b></u></a></p>
+                    <p><a href="https://scholar.google.com/citations?user=_le-O14AAAAJ&hl=en" target="_blank" rel="noopener noreferrer"> <u><b>Google Scholar</b></u></a></p>
+                    <p><a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2556755" target="_blank" rel="noopener noreferrer"> <u><b>SSRN</b></u></a></p>
+                </div>
+            </div>                
+        </div> 
 
             <!-- Contact Info Sidebar -->
-            <div class="sidebar">
+            <div class="col-md-4">
                 <div class="name-header"><b>Shuo Xia 夏烁</b></div><br>
                 <p class="contact-info">
                     <i class="fa fa-envelope"></i> 
