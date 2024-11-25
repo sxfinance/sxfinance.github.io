@@ -83,12 +83,20 @@
       margin-bottom: 20px;
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
+   /* List styling */
+   ol {
+      list-style-type: decimal;
+      margin-bottom: 20px;
     }
 
-    ul li {
+    ol ol {
+      list-style-type: disc; /* Nested lists use bullet points */
+      margin-top: 5px;
+      padding-left: 20px;
+    }
+
+    ol ol li {
+      font-style: italic;
       margin-bottom: 10px;
     }
   </style>
